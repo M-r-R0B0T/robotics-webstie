@@ -1,0 +1,80 @@
+Electronics & Embedded Systems:
+• NVIDIA Jetson AGX Orin (275 TOPS): fully self-contained onboard edge compute
+• STM32H743 (Cortex-M7 @ 480MHz): RTOS-grade deterministic real-time servo orchestration
+• EMAX ES08MA II Metal Gear Micro Servos: compact metal-gear actuators with high positional accuracy
+• Dual IMX477 Vision sensors: eye-socket-ﬁt 12.3MP stereo pair for parallax-based depth estimation
+• Knowles SPH0645LM4H MEMS I2S Microphones: sub-millimeter discrete mics for in-skull acoustic localization
+• MAX98357A I2S Class-D Amp + 2W Full-Range Mini Speaker: compact digital audio output for low-distortion
+speech synthesis
+• 5V/20A SMPS + Capacitor Bank: high-current servo power rail with transient buﬀering against brownouts
+• ICM-42688-P 6-axis IMU: inertial feedback for closed-loop head orientation stabilization
+Software Flow
+Faster
+Whisper LLM GPT-
+SoVITS
+NVIDIA
+Parakeet
+timestamper
+Parakeet
+Word
+Segment
+Classiﬁert
+Word Phonemizer Mouth
+Servo
+code
+Segment Emotion
+classiﬁer
+model
+Emotion
+coordinates
+Face
+servo
+code
+06
+Non Indigenous Indigenous
+Expensive
+Aﬀordable
+07
+Ancalagon Industries utilizes a multi-channel revenue
+strategy to disrupt the high-cost humanoid market.
+Revenue Model
+Our revenue strategy is built on three primary pillars—B2B, B2C, and B2G—to ensure
+diverse income streams and rapid market penetration.
+B2B (Business-to-Business)
+• Direct Sales: Selling modular V.I.S.A.G.E. units like head,Half body and full body
+• RaaS (Robot-as-a-Service): Monthly subscription models
+• Software Licensing: Enterprise licensing for our proprietary
+B2C (Business-to-Consumer)
+• Personal Companion Robots: High-end, emotionally intelligent social robots for home
+companionship and educational use.
+B2G (Business-to-Government)
+• Public Infrastructure: Deploying automated greeting and helpdesk robots for government-run
+transportation hubs, museums, and educational institution
+08
+Advanced R&D & Lab Setup
+• End-to-end "Prototype-to-Product" facility.
+• In-house testing for government certiﬁcation.
+Core Team Expansion
+• Hiring top-tier Robotics talent.
+• Scaling Autonomy and AI engineering wings.
+Manufacturing Transition
+• Optimizing designs for mass production.
+• Establishing a robust Robotic supply chain.
+Total Funds Required:
+40%
+35%
+25%
+State-of-the-Art Manufacturing Facility
+• Setting up a dedicated robotics manufacturing and
+assembly unit.
+Supply Chain Indigenization
+• Moving away from imported Chinese/European motors
+by scaling our own actuators lines.
+Fulﬁllment & Execution
+• Scaling production capacity to comfortably execute
+high-volume domestic robotics contracts and expanding
+into the global export market.
+Once the prototypes are -validated, the
+capital will transition Ancalagon from
+an R&D lab to an industrial powerhouse.
+Projected Requirement:

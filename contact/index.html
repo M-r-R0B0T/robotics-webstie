@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Ancalagon Robotics</title>
+    <meta name="description"
+        content="Contact Ancalagon Robotics. Get in touch for partnerships, deployment, press, or general inquiries." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-page="contact">
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="../media/logo.png" alt="Ancalagon" class="logo-img" />
+                <span class="logo-text">ANCALAGON</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/visage/" class="nav-link">VISAGE</a></li>
+                <li><a href="/research/" class="nav-link">Research</a></li>
+                <li><a href="/lab/" class="nav-link">Lab</a></li>
+                <li><a href="/company/" class="nav-link">Company</a></li>
+                <li><a href="/careers/" class="nav-link">Careers</a></li>
+            </ul>
+            <a href="/contact/" class="nav-cta"
+                style="border-color:rgba(255,255,255,0.3); color:var(--text-primary);">Contact Us ↗</a>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="/visage/" class="mob-link">VISAGE</a></li>
+            <li><a href="/research/" class="mob-link">Research</a></li>
+            <li><a href="/lab/" class="mob-link">Lab</a></li>
+            <li><a href="/company/" class="mob-link">Company</a></li>
+            <li><a href="/careers/" class="mob-link">Careers</a></li>
+            <li><a href="/contact/" class="mob-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTACT MAIN -->
+    <section class="section contact-page-section">
+        <div class="container contact-page-grid">
+
+            <!-- Left -->
+            <div class="contact-page-left reveal">
+                <div class="page-breadcrumb" style="margin-bottom:2rem;">ANCALAGON / CONTACT</div>
+                <h1 class="section-title" style="font-size:clamp(3rem,5vw,5.5rem); line-height:1.0;">
+                    Let's talk.
+                </h1>
+                <p class="body-text" style="margin-top:1.5rem;">
+                    Whether you're interested in deploying VISAGE, exploring a research collaboration,
+                    or just want to learn more — reach out.
+                </p>
+
+                <div class="contact-channels">
+                    <a href="mailto:hello@ancalagonrobotics.ai" class="contact-channel-item">
+                        <span class="contact-channel-label">General Inquiries</span>
+                        <span class="contact-channel-val">hello@ancalagonrobotics.ai ↗</span>
+                    </a>
+                    <a href="mailto:press@ancalagonrobotics.ai" class="contact-channel-item">
+                        <span class="contact-channel-label">Press &amp; Media</span>
+                        <span class="contact-channel-val">press@ancalagonrobotics.ai ↗</span>
+                    </a>
+                    <a href="mailto:careers@ancalagonrobotics.ai" class="contact-channel-item">
+                        <span class="contact-channel-label">Careers</span>
+                        <span class="contact-channel-val">careers@ancalagonrobotics.ai ↗</span>
+                    </a>
+                    <a href="mailto:partners@ancalagonrobotics.ai" class="contact-channel-item">
+                        <span class="contact-channel-label">Partnerships &amp; Enterprise</span>
+                        <span class="contact-channel-val">partners@ancalagonrobotics.ai ↗</span>
+                    </a>
+                </div>
+
+                <div class="social-links" style="margin-top:3rem;">
+                    <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+                    <a href="#" class="social-link" aria-label="Instagram">◎</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+
+            <!-- Right: Newsletter + Form -->
+            <div class="contact-page-right reveal delay-2">
+                <div class="contact-form-box glass">
+                    <h2 class="contact-form-title">Stay in the loop.</h2>
+                    <p class="body-text" style="font-size:0.9rem; margin-bottom:2rem;">
+                        Get product updates, research drops, and company news delivered to your inbox.
+                    </p>
+                    <form id="newsletter-form" onsubmit="handleNewsletter(event)">
+                        <div class="contact-field">
+                            <label class="contact-field-label" for="cf-name">Name</label>
+                            <input type="text" id="cf-name" placeholder="Your name" class="contact-input" />
+                        </div>
+                        <div class="contact-field">
+                            <label class="contact-field-label" for="cf-email">Email *</label>
+                            <input type="email" id="cf-email" id="email-input" placeholder="you@company.com"
+                                class="contact-input" required />
+                        </div>
+                        <div class="contact-field">
+                            <label class="contact-field-label" for="cf-interest">I'm interested in</label>
+                            <select id="cf-interest" class="contact-input contact-select">
+                                <option value="">Select a topic</option>
+                                <option>Deploying VISAGE</option>
+                                <option>Research Collaboration</option>
+                                <option>Partnership / Enterprise</option>
+                                <option>Press / Media</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="contact-field">
+                            <label class="contact-field-label" for="cf-msg">Message</label>
+                            <textarea id="cf-msg" placeholder="Tell us more..." class="contact-input contact-textarea"
+                                rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary"
+                            style="width:100%; justify-content:center; margin-top:0.5rem;">
+                            Send Message
+                        </button>
+                        <p id="newsletter-msg" class="newsletter-msg"
+                            style="display:none; color:var(--accent-primary); margin-top:0.75rem; font-size:0.85rem;">
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER NAV -->
+    <section class="contact-footer-nav">
+        <div class="container">
+            <div class="contact-right">
+                <div class="footer-nav-col"><span class="footer-nav-num">01</span><a href="/visage/"
+                        class="footer-nav-link">VISAGE</a></div>
+                <div class="footer-nav-col"><span class="footer-nav-num">02</span><a href="/company/"
+                        class="footer-nav-link">COMPANY</a></div>
+                <div class="footer-nav-col"><span class="footer-nav-num">03</span><a href="/careers/"
+                        class="footer-nav-link">CAREERS</a></div>
+                <div class="footer-nav-col"><span class="footer-nav-num">04</span><a href="/research/"
+                        class="footer-nav-link">RESEARCH</a></div>
+                <div class="footer-nav-col"><span class="footer-nav-num">05</span><a href="/lab/"
+                        class="footer-nav-link">LAB</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="footer-copy">© Ancalagon Robotics 2026.</span>
+            <div class="footer-legal">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

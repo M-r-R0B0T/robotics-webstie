@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research — Ancalagon Robotics</title>
+    <meta name="description"
+        content="Ancalagon Robotics research spans foundation models, imitation learning, sim-to-real transfer, and tactile intelligence." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-page="research">
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="../media/logo.png" alt="Ancalagon" class="logo-img" />
+                <span class="logo-text">ANCALAGON</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/visage/" class="nav-link">VISAGE</a></li>
+                <li><a href="/research/" class="nav-link active">Research</a></li>
+                <li><a href="/lab/" class="nav-link">Lab</a></li>
+                <li><a href="/company/" class="nav-link">Company</a></li>
+                <li><a href="/careers/" class="nav-link">Careers</a></li>
+            </ul>
+            <a href="/contact/" class="nav-cta">Contact Us ↗</a>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="/visage/" class="mob-link">VISAGE</a></li>
+            <li><a href="/research/" class="mob-link">Research</a></li>
+            <li><a href="/lab/" class="mob-link">Lab</a></li>
+            <li><a href="/company/" class="mob-link">Company</a></li>
+            <li><a href="/careers/" class="mob-link">Careers</a></li>
+            <li><a href="/contact/" class="mob-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero page-hero-dark">
+        <div class="page-hero-content page-hero-content-center">
+            <div class="page-breadcrumb fade-in-up delay-1">ANCALAGON / RESEARCH</div>
+            <h1 class="page-hero-title fade-in-up delay-2">AI &amp; Autonomy</h1>
+            <p class="page-hero-sub fade-in-up delay-3">
+                Intelligence that lives in the body.
+            </p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col reveal">
+                <h2 class="section-title">
+                    We train robots<br />the way humans<br />learn.
+                </h2>
+                <div>
+                    <p class="body-text">
+                        Our research spans foundation models for robotics, imitation learning from
+                        human demonstration, real-time motor control, and sim-to-real transfer.
+                        We believe that intelligence must be deeply grounded in the body — perception,
+                        action, and learning must be unified.
+                    </p>
+                    <p class="body-text">
+                        By doing, failing, and refining in the real world, our robots acquire
+                        skills that generalize across environments, objects, and tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH AREAS -->
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <div class="section-label reveal">01 — RESEARCH AREAS</div>
+            <div class="research-area-list">
+                <div class="research-area-item reveal">
+                    <span class="research-area-num">01</span>
+                    <div class="research-area-content">
+                        <h3 class="research-area-title">Foundation Models for Robotics</h3>
+                        <p class="body-text">
+                            Pre-training cross-embodiment transformers on large-scale robot teleoperation datasets,
+                            enabling rapid adaptation to new tasks with minimal demonstration data.
+                        </p>
+                        <div class="research-tags" style="margin-top:1.25rem;">
+                            <span class="tag">Transformer Architecture</span>
+                            <span class="tag">Transfer Learning</span>
+                            <span class="tag">State Representation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-area-item reveal delay-1">
+                    <span class="research-area-num">02</span>
+                    <div class="research-area-content">
+                        <h3 class="research-area-title">Imitation Learning</h3>
+                        <p class="body-text">
+                            Learning dexterous manipulation and locomotion policies directly from
+                            human demonstration via behavior cloning and inverse reinforcement learning.
+                        </p>
+                        <div class="research-tags" style="margin-top:1.25rem;">
+                            <span class="tag">Behavior Cloning</span>
+                            <span class="tag">IRL</span>
+                            <span class="tag">DAGGER</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-area-item reveal delay-2">
+                    <span class="research-area-num">03</span>
+                    <div class="research-area-content">
+                        <h3 class="research-area-title">Real-Time Motor Control</h3>
+                        <p class="body-text">
+                            High-frequency control loops at 1 kHz for reactive, compliant interaction
+                            with unstructured environments — from thin-object grasping to dynamic walking.
+                        </p>
+                        <div class="research-tags" style="margin-top:1.25rem;">
+                            <span class="tag">Model Predictive Control</span>
+                            <span class="tag">Whole-Body Control</span>
+                            <span class="tag">Contact-Rich Manipulation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-area-item reveal delay-3">
+                    <span class="research-area-num">04</span>
+                    <div class="research-area-content">
+                        <h3 class="research-area-title">Sim-to-Real Transfer</h3>
+                        <p class="body-text">
+                            Domain randomization, physics-informed rendering, and adaptive environments
+                            to train policies that transfer seamlessly from simulation to the physical world.
+                        </p>
+                        <div class="research-tags" style="margin-top:1.25rem;">
+                            <span class="tag">Domain Randomization</span>
+                            <span class="tag">Physics Simulation</span>
+                            <span class="tag">Adaptive Transfer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-area-item reveal delay-4">
+                    <span class="research-area-num">05</span>
+                    <div class="research-area-content">
+                        <h3 class="research-area-title">Language Grounding</h3>
+                        <p class="body-text">
+                            Bridging natural language instructions and physical robot behavior through
+                            vision-language-action models trained on paired human-robot demonstrations.
+                        </p>
+                        <div class="research-tags" style="margin-top:1.25rem;">
+                            <span class="tag">VLA Models</span>
+                            <span class="tag">Language Instructions</span>
+                            <span class="tag">Multimodal Alignment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISUAL: internal render -->
+    <section class="section" style="padding-top:0;">
+        <div class="container">
+            <div class="research-visual-wrap reveal">
+                <img src="../media/Make_the_robot_reveal_its_internal_facial_structur_delpmaspu.png"
+                    alt="VISAGE internal actuator array" class="research-visual-img" />
+                <div class="research-visual-caption">VISAGE — Internal Actuator Array, v1.4</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section inner-cta-section">
+        <div class="container inner-cta reveal">
+            <div>
+                <h2 class="section-title">See our work in action.</h2>
+                <p class="body-text" style="margin-top:1rem;">Explore lab demos and research publications.</p>
+            </div>
+            <a href="/lab/" class="btn-primary">View Lab ↗</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="footer-copy">© Ancalagon Robotics 2026.</span>
+            <div class="footer-legal">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
