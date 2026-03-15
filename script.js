@@ -169,7 +169,7 @@ function openVideoModal(e) {
   const video = document.getElementById('modal-video');
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
-  video.play().catch(() => {});
+  video.play().catch(() => { });
 }
 
 function closeVideoModal() {
@@ -258,4 +258,58 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   );
 
   sections.forEach(s => observer.observe(s));
+})();
+
+/* ─── FAST TYPEWRITER ANIMATION ──────────────────────────────── */
+(function initTypewriter() {
+  const elements = document.querySelectorAll('.typewriter-text');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+
+        // Only apply typewriter to heading tags
+        if (!el.tagName.match(/^H[1-6]$/)) {
+          el.style.opacity = '1';
+          observer.unobserve(el);
+          return;
+        }
+
+        if (el.dataset.typed === "true") return; // prevent re-typing
+        el.dataset.typed = "true";
+
+        const originalText = el.innerHTML;
+        // Strip HTML tags for clean typing effect, or handle text nodes. 
+        // For simplicity, we assume textContent is what we type out.
+        // It's safer to type out raw text and not break HTML tags.
+        const textToType = el.textContent.trim();
+        el.innerHTML = '';
+        el.style.opacity = '1'; // ensure visibility
+
+        let i = 0;
+        const speed = 5; // very fast 5ms per char
+
+        function typeChar() {
+          if (i < textToType.length) {
+            el.innerHTML += textToType.charAt(i);
+            i++;
+            setTimeout(typeChar, speed);
+          } else {
+            // Retore original HTML if it had breaks or spans
+            el.innerHTML = originalText;
+          }
+        }
+
+        typeChar();
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  elements.forEach(el => {
+    // Hide initially until observed
+    el.style.opacity = '0';
+    observer.observe(el);
+  });
 })();

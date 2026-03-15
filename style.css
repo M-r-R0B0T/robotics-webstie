@@ -74,9 +74,90 @@ ul {
 
 /* ─── CONTAINER ──────────────────────────────────────────────── */
 .container {
-  max-width: 1280px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
   padding: 0 48px;
+}
+
+/* ─── FULL BLEED UTILITIES ────────────────────────────────────── */
+.bleed-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  /* separator lines between sections */
+}
+
+.bleed-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.bleed-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none !important;
+  z-index: 2;
+}
+
+.bleed-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bleed-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.bleed-sub {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+/* Light Theme Modifiers for Bleed Sections */
+.bleed-section.light-theme .bleed-overlay {
+  background: none !important;
+}
+
+.bleed-section.light-theme .bleed-title {
+  color: #000;
+}
+
+.bleed-section.light-theme .bleed-sub {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.bleed-section.light-theme .btn-primary {
+  background-color: #000;
+  color: #fff;
 }
 
 /* ─── SCROLL ANIMATIONS ──────────────────────────────────────── */
@@ -439,11 +520,7 @@ ul {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-      rgba(10, 10, 10, 1) 0%,
-      rgba(10, 10, 10, 0.6) 40%,
-      rgba(10, 10, 10, 0.2) 70%,
-      rgba(10, 10, 10, 0.15) 100%);
+  background: none !important;
 }
 
 .hero-content {
@@ -1525,7 +1602,7 @@ ul {
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0.55) 50%, rgba(10, 10, 10, 0.25) 100%);
+  background: none !important;
 }
 
 .page-hero-content {

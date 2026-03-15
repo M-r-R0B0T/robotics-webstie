@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research — Ancalagon Robotics</title>
+    <title>RESEARCH — Ancalagon Robotics</title>
     <meta name="description"
-        content="Ancalagon Robotics research spans foundation models, imitation learning, sim-to-real transfer, and tactile intelligence." />
+        content="Our research spans foundation models, imitation learning, and real-time motor control for VISAGE." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +25,9 @@
             </a>
             <ul class="nav-links">
                 <li><a href="/visage/" class="nav-link">VISAGE</a></li>
-                <li><a href="/research/" class="nav-link active">Research</a></li>
-                <li><a href="/lab/" class="nav-link">Lab</a></li>
+                <li><a href="/sentience/" class="nav-link">SENTIENCE</a></li>
+                <li><a href="/research/" class="nav-link active">RESEARCH</a></li>
                 <li><a href="/company/" class="nav-link">Company</a></li>
-                <li><a href="/careers/" class="nav-link">Careers</a></li>
             </ul>
             <a href="/contact/" class="nav-cta">Contact Us ↗</a>
             <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
@@ -39,151 +38,120 @@
     <div class="mobile-menu" id="mobile-menu">
         <ul>
             <li><a href="/visage/" class="mob-link">VISAGE</a></li>
-            <li><a href="/research/" class="mob-link">Research</a></li>
-            <li><a href="/lab/" class="mob-link">Lab</a></li>
+            <li><a href="/sentience/" class="mob-link">SENTIENCE</a></li>
+            <li><a href="/research/" class="mob-link active">RESEARCH</a></li>
             <li><a href="/company/" class="mob-link">Company</a></li>
-            <li><a href="/careers/" class="mob-link">Careers</a></li>
             <li><a href="/contact/" class="mob-link">Contact</a></li>
         </ul>
     </div>
 
     <!-- PAGE HERO -->
-    <section class="page-hero page-hero-dark">
+    <section class="page-hero">
+        <div class="page-hero-img-wrap">
+            <img src="../media/Make_the_robot_reveal_its_internal_facial_structur_delpmaspu.png"
+                alt="VISAGE Internal Actuators" class="page-hero-img" style="object-position: center 20%;" />
+            <div class="page-hero-overlay"></div>
+        </div>
         <div class="page-hero-content page-hero-content-center">
             <div class="page-breadcrumb fade-in-up delay-1">ANCALAGON / RESEARCH</div>
-            <h1 class="page-hero-title fade-in-up delay-2">AI &amp; Autonomy</h1>
+            <h1 class="page-hero-title fade-in-up delay-2">AI, Hardware, <br />& Autonomy Hub</h1>
             <p class="page-hero-sub fade-in-up delay-3">
                 Intelligence that lives in the body.
             </p>
         </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="section">
-        <div class="container">
-            <div class="two-col reveal">
-                <h2 class="section-title">
-                    We train robots<br />the way humans<br />learn.
-                </h2>
-                <div>
-                    <p class="body-text">
-                        Our research spans foundation models for robotics, imitation learning from
-                        human demonstration, real-time motor control, and sim-to-real transfer.
-                        We believe that intelligence must be deeply grounded in the body — perception,
-                        action, and learning must be unified.
-                    </p>
-                    <p class="body-text">
-                        By doing, failing, and refining in the real world, our robots acquire
-                        skills that generalize across environments, objects, and tasks.
-                    </p>
-                </div>
-            </div>
+    <!-- INTRO FULL BLEED -->
+    <section class="bleed-section reveal">
+        <img src="../media/eye.png" alt="VISAGE Foundation Models" class="bleed-bg" />
+        <div class="bleed-overlay"
+            style="background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 100%);">
+        </div>
+        <div class="bleed-content" style="max-width: 800px; padding: 10rem 2rem;">
+            <div class="section-label" style="color: rgba(255,255,255,0.5); margin-bottom: 2rem;">00 — APPROACH</div>
+            <h2 class="bleed-title" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 2rem;">We train
+                robots<br />the way
+                humans<br />learn.</h2>
+            <br>
+            <p class="bleed-sub"
+                style="font-size: 1.15rem; line-height: 1.6; color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">Our
+                research merges the software intelligence of the Lab with the hardware realization of our Engineering
+                teams. This unified hub spans foundation models for robotics, imitation learning from human
+                demonstration, real-time motor control, and sim-to-real transfer.</p>
+            <p class="bleed-sub" style="font-size: 1.15rem; line-height: 1.6; color: rgba(255,255,255,0.8);">By doing,
+                failing, and refining in the real world, our robots acquire skills that
+                generalize across environments, objects, and tasks.</p>
         </div>
     </section>
 
-    <!-- RESEARCH AREAS -->
-    <section class="section" style="padding-top:0;">
-        <div class="container">
-            <div class="section-label reveal">01 — RESEARCH AREAS</div>
-            <div class="research-area-list">
-                <div class="research-area-item reveal">
-                    <span class="research-area-num">01</span>
-                    <div class="research-area-content">
-                        <h3 class="research-area-title">Foundation Models for Robotics</h3>
-                        <p class="body-text">
-                            Pre-training cross-embodiment transformers on large-scale robot teleoperation datasets,
-                            enabling rapid adaptation to new tasks with minimal demonstration data.
-                        </p>
-                        <div class="research-tags" style="margin-top:1.25rem;">
-                            <span class="tag">Transformer Architecture</span>
-                            <span class="tag">Transfer Learning</span>
-                            <span class="tag">State Representation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="research-area-item reveal delay-1">
-                    <span class="research-area-num">02</span>
-                    <div class="research-area-content">
-                        <h3 class="research-area-title">Imitation Learning</h3>
-                        <p class="body-text">
-                            Learning dexterous manipulation and locomotion policies directly from
-                            human demonstration via behavior cloning and inverse reinforcement learning.
-                        </p>
-                        <div class="research-tags" style="margin-top:1.25rem;">
-                            <span class="tag">Behavior Cloning</span>
-                            <span class="tag">IRL</span>
-                            <span class="tag">DAGGER</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="research-area-item reveal delay-2">
-                    <span class="research-area-num">03</span>
-                    <div class="research-area-content">
-                        <h3 class="research-area-title">Real-Time Motor Control</h3>
-                        <p class="body-text">
-                            High-frequency control loops at 1 kHz for reactive, compliant interaction
-                            with unstructured environments — from thin-object grasping to dynamic walking.
-                        </p>
-                        <div class="research-tags" style="margin-top:1.25rem;">
-                            <span class="tag">Model Predictive Control</span>
-                            <span class="tag">Whole-Body Control</span>
-                            <span class="tag">Contact-Rich Manipulation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="research-area-item reveal delay-3">
-                    <span class="research-area-num">04</span>
-                    <div class="research-area-content">
-                        <h3 class="research-area-title">Sim-to-Real Transfer</h3>
-                        <p class="body-text">
-                            Domain randomization, physics-informed rendering, and adaptive environments
-                            to train policies that transfer seamlessly from simulation to the physical world.
-                        </p>
-                        <div class="research-tags" style="margin-top:1.25rem;">
-                            <span class="tag">Domain Randomization</span>
-                            <span class="tag">Physics Simulation</span>
-                            <span class="tag">Adaptive Transfer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="research-area-item reveal delay-4">
-                    <span class="research-area-num">05</span>
-                    <div class="research-area-content">
-                        <h3 class="research-area-title">Language Grounding</h3>
-                        <p class="body-text">
-                            Bridging natural language instructions and physical robot behavior through
-                            vision-language-action models trained on paired human-robot demonstrations.
-                        </p>
-                        <div class="research-tags" style="margin-top:1.25rem;">
-                            <span class="tag">VLA Models</span>
-                            <span class="tag">Language Instructions</span>
-                            <span class="tag">Multimodal Alignment</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- STRUCTURED RESEARCH BULLETIN -->
+    <section class="section" style="padding: 6rem 2vw; background-color: #050505;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div class="section-label" style="color: rgba(255,255,255,0.4); margin-bottom: 3rem;">CURRENT RESEARCH
+                BULLETINS</div>
 
-    <!-- VISUAL: internal render -->
-    <section class="section" style="padding-top:0;">
-        <div class="container">
-            <div class="research-visual-wrap reveal">
-                <img src="../media/Make_the_robot_reveal_its_internal_facial_structur_delpmaspu.png"
-                    alt="VISAGE internal actuator array" class="research-visual-img" />
-                <div class="research-visual-caption">VISAGE — Internal Actuator Array, v1.4</div>
+            <div class="bulletin-item" style="border-top: 1px solid rgba(255,255,255,0.1); padding: 3rem 0;">
+                <h3 class="feature-title typewriter-text" style="font-size: 2rem; margin-bottom: 1rem;">Project Alpha:
+                    Dexterous Manipulation at Scale</h3>
+                <p class="feature-body typewriter-text"
+                    style="color: rgba(255,255,255,0.7); max-width: 800px; margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
+                    Combining high-frequency whole-body control with learned policies to enable VISAGE to handle fragile
+                    objects, use human tools, and adapt to shifting weights dynamically without dropping payloads.
+                    Teleoperation data is currently being collected at 10x speed.
+                </p>
+                <div class="research-tags" style="justify-content: flex-start;">
+                    <span class="tag">Imitation Learning</span>
+                    <span class="tag">Tactile Feedback</span>
+                </div>
             </div>
+
+            <div class="bulletin-item" style="border-top: 1px solid rgba(255,255,255,0.1); padding: 3rem 0;">
+                <h3 class="feature-title typewriter-text" style="font-size: 2rem; margin-bottom: 1rem;">Project Beta:
+                    Agile Bipedal Locomotion</h3>
+                <p class="feature-body typewriter-text"
+                    style="color: rgba(255,255,255,0.7); max-width: 800px; margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
+                    Pushing the limits of Model Predictive Control (MPC) and Reinforcement Learning (RL) to navigate
+                    uneven terrain, recover from strong shoves, and transition seamlessly between walking, crouching,
+                    and load-carrying gaits.
+                </p>
+                <div class="research-tags" style="justify-content: flex-start;">
+                    <span class="tag">Reinforcement Learning</span>
+                    <span class="tag">Model Predictive Control</span>
+                    <span class="tag">Sim-to-Real</span>
+                </div>
+            </div>
+
+            <div class="bulletin-item"
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding: 3rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <h3 class="feature-title typewriter-text" style="font-size: 2rem; margin-bottom: 1rem;">Project Gamma:
+                    Semantic World Modeling</h3>
+                <p class="feature-body typewriter-text"
+                    style="color: rgba(255,255,255,0.7); max-width: 800px; margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.6;">
+                    Bridging natural language instructions and physical robot behavior through Vision-Language-Action
+                    (VLA) models. This enables end-users to command VISAGE with open-ended speech like "Please clean up
+                    the coffee spill" without writing a single line of code.
+                </p>
+                <div class="research-tags" style="justify-content: flex-start;">
+                    <span class="tag">VLA Models</span>
+                    <span class="tag">Language Grounding</span>
+                    <span class="tag">Semantic Mapping</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="section inner-cta-section">
-        <div class="container inner-cta reveal">
-            <div>
-                <h2 class="section-title">See our work in action.</h2>
-                <p class="body-text" style="margin-top:1rem;">Explore lab demos and research publications.</p>
-            </div>
-            <a href="/lab/" class="btn-primary">View Lab ↗</a>
+    <section class="bleed-section reveal" style="min-height: 400px; height: 50vh;">
+        <img src="../media/fullbody.png" alt="VISAGE Standing" class="bleed-bg" style="object-position: top center;" />
+        <div class="bleed-overlay" style="background: rgba(0,0,0,0.7);"></div>
+        <div class="bleed-content" style="align-items: center; text-align: center; justify-content: center;">
+            <h2 class="section-title"
+                style="font-family: var(--font-display); font-size: clamp(3rem, 5vw, 5rem); font-weight: 700; letter-spacing: -0.04em; margin-bottom: 1rem;">
+                See our work in action.</h2>
+            <p class="body-text" style="color: rgba(255,255,255,0.7); margin-bottom: 2.5rem; font-size: 1.2rem;">Explore
+                lab demos and research publications.</p>
+            <a href="/contact/" class="btn-primary">Get in Touch ↗</a>
         </div>
     </section>
 
