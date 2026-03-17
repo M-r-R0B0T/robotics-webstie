@@ -186,27 +186,27 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeVideoModal();
 });
 
-/* ─── NEWSLETTER ─────────────────────────────────────────────── */
+/* ─── CONTACT & NEWSLETTER ───────────────────────────────────── */
 function handleNewsletter(e) {
   e.preventDefault();
-  const input = document.getElementById('email-input');
+  const input = e.target.querySelector('input[type="email"]');
   const msg = document.getElementById('newsletter-msg');
-  const email = input.value.trim();
+  if (!input || !input.value.trim()) return;
 
-  if (!email) return;
-
-  // Simulate submission
-  const btn = e.target.querySelector('.newsletter-btn');
+  const btn = e.target.querySelector('button');
+  const originalText = btn.textContent;
   btn.textContent = 'Submitting...';
   btn.disabled = true;
 
   setTimeout(() => {
     input.value = '';
-    btn.textContent = 'Sign Up';
+    btn.textContent = originalText;
     btn.disabled = false;
-    msg.style.display = 'block';
-    msg.textContent = '✓ You\'re on the list. We\'ll be in touch.';
-    setTimeout(() => { msg.style.display = 'none'; }, 5000);
+    if (msg) {
+      msg.style.display = 'block';
+      msg.textContent = '✓ You\'re on the list. We\'ll be in touch.';
+      setTimeout(() => { msg.style.display = 'none'; }, 5000);
+    }
   }, 900);
 }
 
