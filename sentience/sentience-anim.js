@@ -103,3 +103,101 @@
   requestAnimationFrame(animateFrame);
 
 })();
+
+// --- PARTICLE ORB ANIMATION ---
+(function initOrb() {
+  const canvas = document.getElementById('orb-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d', { alpha: true });
+  
+  const width = canvas.width;
+  const height = canvas.height;
+  
+  const particles = [];
+  const numParticles = 3000;
+  const radius = 320;
+  
+  for (let i = 0; i < numParticles; i++) {
+    // Distribute points evenly on a sphere using Fibonacci lattice
+    const phi = Math.acos(-1 + (2 * i) / numParticles);
+    const theta = Math.sqrt(numParticles * Math.PI) * phi;
+    
+    // Add noise to radius
+    const rVar = radius + (Math.random() * 50 - 25);
+
+    particles.push({
+      phi: phi,
+      theta: theta,
+      rVar: rVar,
+      baseSize: Math.random() * 1.5 + 0.4,
+      phase: Math.random() * Math.PI * 2,
+      pulseSpeed: Math.random() * 0.03 + 0.01,
+      pulseAmp: Math.random() * 30 + 10
+    });
+  }
+  
+  // Keep an extremely slow rotation just for depth perception, but stop the spinning
+  let angleX = 0;
+  let angleY = 0;
+  
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    
+    angleX += 0.0001;
+    angleY += 0.0002;
+    
+    const cosX = Math.cos(angleX);
+    const sinX = Math.sin(angleX);
+    const cosY = Math.cos(angleY);
+    const sinY = Math.sin(angleY);
+    
+    const centerX = width / 2;
+    const centerY = height / 2;
+    
+    ctx.globalCompositeOperation = 'lighter';
+    
+    for (let i = 0; i < numParticles; i++) {
+      const p = particles[i];
+      
+      // Update individual pulsing phase
+      p.phase += p.pulseSpeed;
+      
+      // Calculate current radius based on pulse
+      const currentR = p.rVar + Math.sin(p.phase) * p.pulseAmp;
+      
+      // Calculate 3D coordinates
+      const px = currentR * Math.cos(p.theta) * Math.sin(p.phi);
+      const py = currentR * Math.sin(p.theta) * Math.sin(p.phi);
+      const pz = currentR * Math.cos(p.phi);
+      
+      // Rotate X
+      const y1 = py * cosX - pz * sinX;
+      const z1 = py * sinX + pz * cosX;
+      
+      // Rotate Y
+      const x2 = px * cosY + z1 * sinY;
+      const z2 = -px * sinY + z1 * cosY;
+      
+      // Perspective projection
+      const perspective = 800 / (800 + z2);
+      
+      if (perspective > 0.1) {
+        const xProj = centerX + x2 * perspective;
+        const yProj = centerY + y1 * perspective;
+        const size = p.baseSize * perspective;
+        
+        // Depth-based alpha fading
+        const alpha = Math.min(1, Math.max(0.05, perspective - 0.4));
+        
+        ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+        ctx.beginPath();
+        ctx.arc(xProj, yProj, size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    
+    requestAnimationFrame(draw);
+  }
+  
+  draw();
+})();

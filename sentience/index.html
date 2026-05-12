@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SENTIENCE — Ancalagon Robotics</title>
-    <meta name="description" content="SENTIENCE is the foundational vision-language-action model powering autonomous reason for VISAGE." />
+    <meta name="description"
+        content="SENTIENCE is the foundational vision-language-action model powering autonomous reason for VISAGE." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="sentience.css" />
 </head>
+
 <body data-page="sentience">
     <nav id="navbar" class="navbar">
         <div class="nav-inner">
@@ -43,19 +48,23 @@
     <!-- ═══ HERO: PERFECT SCALABLE ARCHITECTURE DIAGRAM ═══ -->
     <section class="sd-hero">
         <div class="sd-svg-container">
-            <svg class="sd-svg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" id="sentience-diagram">
-                
+            <svg class="sd-svg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet" id="sentience-diagram">
+
                 <!-- Watermark -->
                 <text x="960" y="600" class="sd-wm" text-anchor="middle">SENTIENCE</text>
-                
+
                 <!-- Robot Background -->
-                <image href="../media/render.png" x="650" y="50" width="620" style="mix-blend-mode: lighten; opacity: 1;" />
+                <foreignObject x="600" y="50" width="720" height="900">
+                    <canvas id="orb-canvas" width="720" height="900" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; mix-blend-mode: lighten; pointer-events: none;"></canvas>
+                </foreignObject>
 
                 <!-- HTML Header Text (Absolutely positioned via HTML, but we can do it via foreignObject for scaling) -->
                 <foreignObject x="80" y="60" width="800" height="200">
                     <div xmlns="http://www.w3.org/1999/xhtml">
                         <div class="sd-bc">ANCALAGON / AI</div>
-                        <h1 class="sd-h1">VISAGE SENTIENCE SIMULATION:<br>ADVANCED EMOTIONAL &amp;<br>SPEECH PROCESSING FLOW</h1>
+                        <h1 class="sd-h1">VISAGE SENTIENCE SIMULATION:<br>ADVANCED EMOTIONAL &amp;<br>SPEECH PROCESSING
+                            FLOW</h1>
                     </div>
                 </foreignObject>
 
@@ -67,12 +76,12 @@
                     <path class="conn" d="M 380 530 L 480 530" data-speed="0.8" />
                     <path class="conn" d="M 380 740 L 430 740 L 430 600 L 480 600" data-speed="0.5" />
                     <path class="conn" d="M 230 840 L 230 900 L 650 900 L 650 640" data-speed="0.4" />
-                    
+
                     <!-- Center Core -->
                     <path class="conn" d="M 820 540 L 880 540" data-speed="1.2" />
                     <path class="conn" d="M 1040 540 L 1100 540" data-speed="1.2" />
                     <path class="conn" d="M 1440 540 L 1480 540" data-speed="1.0" />
-                    
+
                     <!-- Top Output Chain -->
                     <path class="conn" d="M 1270 440 L 1270 295 L 1380 295" data-speed="0.9" />
                     <path class="conn" d="M 1500 295 L 1520 295" data-speed="1.1" />
@@ -89,22 +98,22 @@
                 <text x="80" y="285" class="svg-label">HUMAN QUERY:</text>
                 <text x="80" y="465" class="svg-label">HUMAN QUERY:</text>
                 <text x="80" y="685" class="svg-label">ROBOT STATE</text>
-                
+
                 <text x="390" y="332" class="svg-hz">20 hz</text>
                 <text x="390" y="392" class="svg-hz">20 hz</text>
                 <text x="390" y="732" class="svg-hz">7-9 hz</text>
                 <text x="390" y="792" class="svg-hz">20 hz</text>
-                
+
                 <text x="330" y="890" class="svg-hz">Subsystem 2</text>
                 <text x="830" y="525" class="svg-hz">7-9 hz</text>
-                
+
                 <text x="1310" y="285" class="svg-hz">20 hz</text>
                 <text x="1440" y="210" class="svg-label-bold">TEMPORAL SEGMENTATION</text>
                 <text x="1440" y="235" class="svg-label-bold">&amp; CLASSIFICATION NETWORK</text>
                 <text x="1560" y="700" class="svg-hz">200 hz</text>
 
                 <!-- ─── HTML NODES (foreignObject) ────────────────────────────────────── -->
-                
+
                 <!-- Left Column -->
                 <foreignObject x="80" y="300" width="300" height="140">
                     <div class="node-box" xmlns="http://www.w3.org/1999/xhtml">
@@ -150,7 +159,8 @@
 
                 <foreignObject x="1480" y="490" width="140" height="100">
                     <div class="node-box" xmlns="http://www.w3.org/1999/xhtml" style="padding: 10px;">
-                        <h3 class="node-title node-title-sm" style="font-size:14px">TEMPORAL<br>TOKENIZER &amp;<br>SEGMENTATION</h3>
+                        <h3 class="node-title node-title-sm" style="font-size:14px">TEMPORAL<br>TOKENIZER
+                            &amp;<br>SEGMENTATION</h3>
                     </div>
                 </foreignObject>
 
@@ -163,19 +173,22 @@
 
                 <foreignObject x="1520" y="250" width="120" height="90">
                     <div class="node-box" xmlns="http://www.w3.org/1999/xhtml" style="padding: 10px;">
-                        <h3 class="node-title node-title-sm" style="font-size:13px">PROSODY &amp;<br>EMOTION<br>SYNTHESIS</h3>
+                        <h3 class="node-title node-title-sm" style="font-size:13px">PROSODY
+                            &amp;<br>EMOTION<br>SYNTHESIS</h3>
                     </div>
                 </foreignObject>
 
                 <foreignObject x="1660" y="250" width="120" height="90">
                     <div class="node-box" xmlns="http://www.w3.org/1999/xhtml" style="padding: 10px;">
-                        <h3 class="node-title node-title-sm" style="font-size:13px">AFFECTIVE<br>LATENT<br>PROJECTION</h3>
+                        <h3 class="node-title node-title-sm" style="font-size:13px">AFFECTIVE<br>LATENT<br>PROJECTION
+                        </h3>
                     </div>
                 </foreignObject>
 
                 <foreignObject x="1800" y="250" width="110" height="90">
                     <div class="node-box" xmlns="http://www.w3.org/1999/xhtml" style="padding: 10px;">
-                        <h3 class="node-title node-title-sm" style="font-size:13px">MICRO<br>EXPRESSION<br>ACTUATION</h3>
+                        <h3 class="node-title node-title-sm" style="font-size:13px">MICRO<br>EXPRESSION<br>ACTUATION
+                        </h3>
                     </div>
                 </foreignObject>
 
@@ -206,35 +219,49 @@
     <section class="bleed-section light-theme reveal">
         <img src="../media/back_view.jpeg" alt="Sentience Logic" class="bleed-bg" />
         <div class="bleed-overlay"></div>
-        <div class="bleed-content" style="max-width:500px;padding:10rem 2rem;margin-left:auto;margin-right:10vw;align-items:flex-end;text-align:right">
+        <div class="bleed-content"
+            style="max-width:500px;padding:10rem 2rem;margin-left:auto;margin-right:10vw;align-items:flex-end;text-align:right">
             <div class="section-label" style="color:rgba(0,0,0,0.4);margin-bottom:2rem">01 — ARCHITECTURE</div>
-            <h2 class="bleed-title" style="color:#000;font-size:3rem;margin-bottom:1.5rem;line-height:1.1">More than perception.<br/>Simulation of thought.</h2>
+            <h2 class="bleed-title" style="color:#000;font-size:3rem;margin-bottom:1.5rem;line-height:1.1">More than
+                perception.<br />Simulation of thought.</h2>
         </div>
     </section>
 
     <!-- INTEGRATION FULL BLEED -->
     <section class="bleed-section reveal">
-        <img src="../media/Make_he_background_clear_dark_studo_like_render_re_delpmaspu.png" alt="VISAGE Integration" class="bleed-bg" style="object-position:left center" />
+        <img src="../media/Make_he_background_clear_dark_studo_like_render_re_delpmaspu.png" alt="VISAGE Integration"
+            class="bleed-bg" style="object-position:left center" />
         <div class="bleed-overlay"></div>
         <div class="bleed-content" style="max-width:700px;align-items:flex-start;padding:15rem 2rem">
             <div class="section-label" style="color:rgba(255,255,255,0.4);margin-bottom:2rem">02 — EMBODIMENT</div>
-            <h2 class="bleed-title" style="color:#fff;font-size:clamp(2.5rem,4vw,4rem);margin-bottom:2rem;line-height:1.1">Mind meets metal.</h2>
-            <p class="bleed-sub" style="font-size:1.15rem;color:rgba(255,255,255,0.7);margin-bottom:3rem;font-weight:300;line-height:1.6">
-                While SENTIENCE can run in the cloud for large-scale training and simulation, its inference engine is optimized to run entirely on the edge, inside VISAGE's onboard compute.
+            <h2 class="bleed-title"
+                style="color:#fff;font-size:clamp(2.5rem,4vw,4rem);margin-bottom:2rem;line-height:1.1">Mind meets metal.
+            </h2>
+            <p class="bleed-sub"
+                style="font-size:1.15rem;color:rgba(255,255,255,0.7);margin-bottom:3rem;font-weight:300;line-height:1.6">
+                While SENTIENCE can run in the cloud for large-scale training and simulation, its inference engine is
+                optimized to run entirely on the edge, inside VISAGE's onboard compute.
             </p>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.5rem">
                 <li style="display:flex;align-items:flex-start;gap:1rem">
-                    <span style="color:var(--accent-primary);font-family:var(--font-mono);font-size:0.9rem;margin-top:0.2rem">01</span>
+                    <span
+                        style="color:var(--accent-primary);font-family:var(--font-mono);font-size:0.9rem;margin-top:0.2rem">01</span>
                     <div>
-                        <h4 style="color:#fff;font-size:1.1rem;margin-bottom:0.25rem;font-weight:500">Zero-Latency Action</h4>
-                        <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.5">Operating at disruptions instantly.</p>
+                        <h4 style="color:#fff;font-size:1.1rem;margin-bottom:0.25rem;font-weight:500">Zero-Latency
+                            Action</h4>
+                        <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.5">Operating at
+                            disruptions instantly.</p>
                     </div>
                 </li>
                 <li style="display:flex;align-items:flex-start;gap:1rem">
-                    <span style="color:var(--accent-primary);font-family:var(--font-mono);font-size:0.9rem;margin-top:0.2rem">02</span>
+                    <span
+                        style="color:var(--accent-primary);font-family:var(--font-mono);font-size:0.9rem;margin-top:0.2rem">02</span>
                     <div>
-                        <h4 style="color:#fff;font-size:1.1rem;margin-bottom:0.25rem;font-weight:500">Continuous Learning</h4>
-                        <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.5">Fleet-wide data collection allows SENTIENCE<br>to learn from edge cases, pushing updates<br>to all deployed units overnight.</p>
+                        <h4 style="color:#fff;font-size:1.1rem;margin-bottom:0.25rem;font-weight:500">Continuous
+                            Learning</h4>
+                        <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.5">Fleet-wide data
+                            collection allows SENTIENCE<br>to learn from edge cases, pushing updates<br>to all deployed
+                            units overnight.</p>
                     </div>
                 </li>
             </ul>
@@ -242,11 +269,15 @@
     </section>
 
     <!-- CTA -->
-    <section class="bleed-section reveal" style="min-height:70vh;text-align:center;align-items:center;justify-content:center">
+    <section class="bleed-section reveal"
+        style="min-height:70vh;text-align:center;align-items:center;justify-content:center">
         <div class="bleed-overlay"></div>
         <div class="bleed-content" style="max-width:600px;padding:4rem 2rem">
-            <h2 class="bleed-title" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:1.5rem">Deployment &amp; Licensing</h2>
-            <p class="bleed-sub" style="margin-bottom:3rem;color:rgba(255,255,255,0.7);font-size:1.1rem">SENTIENCE is currently available exclusively via VISAGE hardware deployments. Partner API access is coming Q4 2026.</p>
+            <h2 class="bleed-title" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:1.5rem">Deployment &amp;
+                Licensing</h2>
+            <p class="bleed-sub" style="margin-bottom:3rem;color:rgba(255,255,255,0.7);font-size:1.1rem">SENTIENCE is
+                currently available exclusively via VISAGE hardware deployments. Partner API access is coming Q4 2026.
+            </p>
             <a href="/contact/" class="btn-primary" style="margin:0 auto">Inquire About Access</a>
         </div>
     </section>
@@ -265,4 +296,5 @@
     <script src="../script.js"></script>
     <script src="sentience-anim.js"></script>
 </body>
+
 </html>
